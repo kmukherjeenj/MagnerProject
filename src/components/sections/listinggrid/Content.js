@@ -66,7 +66,7 @@ const Content = () => {
 					<div className="listing">
 						<div className="listing-thumbnail" style={{ height: 180 }}>
 							<Link to="#" onClick={(e) => goDetail(e, item)}>
-								<img src={item.thumbnail} alt="listing" style={{ height: "100%", objectFit: "cover" }} />
+								<img src={item.thumbnail} alt="listing" style={{ height: "100%", width: "100%", objectFit: "cover" }} />
 							</Link>
 							<div className="listing-badges">
 								{item.listType === "Sales" ? (
@@ -175,7 +175,7 @@ const Content = () => {
 				<div key={i} className="listing listing-list">
 					<div className="listing-thumbnail" style={{ height: 340 }}>
 						<Link to="#" onClick={(e) => goDetail(e, item)}>
-							<img src={item.thumbnail} alt="listing" style={{ height: "100%", objectFit: "cover" }} />
+							<img src={item.thumbnail} alt="listing" style={{ height: "100%", width: 540, objectFit: "cover" }} />
 						</Link>
 						<div className="listing-badges">
 							{item.listType === "Sales" ? <span className="listing-badge sale">Sales</span> : <span className="listing-badge rent">Lease</span>}
