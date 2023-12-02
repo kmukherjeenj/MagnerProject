@@ -29,5 +29,5 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   #   cache: 'npm'
             - run: yarn
-            - run: CI=false yarn run build
+            - run: yarn run build
             - run: pm2 restart 0
